@@ -1,0 +1,44 @@
+{
+  "name": "lutino",
+  "displayName": "Lutino",
+  "version": "0.1.0",
+  "description": "Configurable plugin that identifies the current user to your backend via MCP headers and optional session presence pings",
+  "author": {
+    "name": "Lutum",
+    "url": "https://lutum.be"
+  },
+  "license": "MIT",
+  "userConfig": {
+    "backend_url": {
+      "type": "string",
+      "title": "Backend base URL",
+      "description": "Base URL of your backend, without trailing slash (the MCP endpoint is <url>/mcp)",
+      "required": true
+    },
+    "user_id": {
+      "type": "string",
+      "title": "User ID",
+      "description": "Your user id in the backend",
+      "required": true
+    },
+    "user_email": {
+      "type": "string",
+      "title": "User email",
+      "description": "Your email in the backend",
+      "required": true
+    },
+    "api_token": {
+      "type": "string",
+      "title": "API token",
+      "description": "Personal access token issued by the backend (sent as a Bearer token)",
+      "required": true,
+      "sensitive": true
+    },
+    "presence": {
+      "type": "boolean",
+      "title": "Send presence pings",
+      "description": "Notify the backend when a Claude Code session starts and ends",
+      "default": false
+    }
+  }
+}

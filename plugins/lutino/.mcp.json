@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "backend": {
+      "type": "http",
+      "url": "${user_config.backend_url}/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_token}",
+        "X-User-Id": "${user_config.user_id}",
+        "X-User-Email": "${user_config.user_email}"
+      }
+    }
+  }
+}

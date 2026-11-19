@@ -1,0 +1,15 @@
+{
+  "name": "lutum-marketplace",
+  "description": "Lutum plugins",
+  "owner": {
+    "name": "Lutum",
+    "url": "https://lutum.be"
+  },
+  "plugins": [
+    {
+      "name": "lutino",
+      "source": "./plugins/lutino",
+      "description": "Demo plugin to identify user and companies."
+    }
+  ]
+}
